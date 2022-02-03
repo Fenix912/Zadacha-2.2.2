@@ -12,8 +12,8 @@ import org.thymeleaf.spring5.templateresolver.SpringResourceTemplateResolver;
 import org.thymeleaf.spring5.view.ThymeleafViewResolver;
 
 @Configuration
-@EnableWebMvc
-@ComponentScan("web")
+@EnableWebMvc // Указывается при использовании MVC
+@ComponentScan("web") // указывается пакет в котором лежат компоненты
 public class WebConfig implements WebMvcConfigurer {
 
     private final ApplicationContext applicationContext;
